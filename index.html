@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajji Karim Kaliisa — Executive Portfolio</title>
+    <meta name="description" content="Hajji Karim Kaliisa — 22+ years of Executive Management, Media Entrepreneurship & ICT leadership across East Africa. Board Member, Consultant, and Visionary Leader.">
+    <meta name="keywords" content="Hajji Karim Kaliisa, Executive Management, Media Consultant, Uganda, VOA Radio, Pearl FM, Next Media, Board Member, NGO Administration">
+    <meta name="author" content="Hajji Karim Kaliisa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0b;
+            --bg-secondary: #111114;
+            --bg-card: #16161b;
+            --bg-card-hover: #1c1c23;
+            --gold: #c8a45c;
+            --gold-light: #d4b872;
+            --gold-dark: #a8863a;
+            --text-primary: #e8e6e1;
+            --text-secondary: #b0aea6;
+            --text-muted: #7a7872;
+            --border: #252530;
+            --border-light: #2e2e3a;
+            --accent: #c8a45c;
+            --accent-subtle: rgba(200, 164, 92, 0.08);
+            --accent-glow: rgba(200, 164, 92, 0.15);
+            --radius-sm: 8px;
+            --radius: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 20px rgba(0, 0, 0, 0.3);
+            --shadow-elevated: 0 8px 40px rgba(0, 0, 0, 0.5);
+            --shadow-gold: 0 0 60px rgba(200, 164, 92, 0.08);
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+        ::selection {
+            background: var(--accent);
+            color: #0a0a0b;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-light);
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+
+        /* ============ NAVIGATION ============ */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 11, 0.82);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition-smooth);
+        }
+        .nav.scrolled {
+            background: rgba(10, 10, 11, 0.94);
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+        }
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 68px;
+        }
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.35rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+        }
+        .nav-logo span {
+            color: var(--gold);
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 6px;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 50px;
+            transition: var(--transition-fast);
+            letter-spacing: 0.01em;
+            white-space: nowrap;
+        }
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            color: #fff;
+            background: var(--accent-subtle);
+        }
+        .nav-links a.cta-nav {
+            background: var(--gold);
+            color: #0a0a0b;
+            font-weight: 600;
+            padding: 9px 20px;
+        }
+        .nav-links a.cta-nav:hover {
+            background: var(--gold-light);
+            box-shadow: 0 4px 20px rgba(200, 164, 92, 0.3);
+        }
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            color: var(--text-primary);
+            z-index: 1001;
+        }
+        .mobile-toggle span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background: var(--text-primary);
+            margin: 6px 0;
+            border-radius: 2px;
+            transition: var(--transition-fast);
+        }
+        .mobile-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .mobile-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        /* ============ HERO ============ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 120px 28px 80px;
+            background: radial-gradient(ellipse 70% 60% at 50% 30%, rgba(200, 164, 92, 0.05) 0%, transparent 70%),
+                radial-gradient(ellipse at 80% 20%, rgba(200, 164, 92, 0.03) 0%, transparent 50%),
+                var(--bg-primary);
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -20%;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(200, 164, 92, 0.04) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-particles {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .hero-particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--gold);
+            border-radius: 50%;
+            opacity: 0;
+            animation: floatUp 8s infinite;
+        }
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            50% {
+                opacity: 0.3;
+            }
+            90% {
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+        .hero-inner {
+            max-width: 1100px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: 42px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            text-align: left;
+        }
+        .hero-copy {
+            max-width: 680px;
+        }
+        .hero-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-image img {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 28px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-card);
+            object-fit: cover;
+            transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+        }
+        .hero-image img:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-elevated);
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent-subtle);
+            border: 1px solid rgba(200, 164, 92, 0.2);
+            color: var(--gold-light);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 8px 18px;
+            border-radius: 50px;
+            margin-bottom: 28px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero-name {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+            font-weight: 700;
+            line-height: 1.08;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
+            color: #fff;
+            animation: fadeInUp 0.9s ease-out;
+        }
+        .hero-name .gold-line {
+            display: block;
+            color: var(--gold);
+            font-size: 0.35em;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 650px;
+            margin: 0 auto 36px;
+            font-weight: 400;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            animation: fadeInUp 1.1s ease-out;
+        }
+        .hero-stat {
+            text-align: center;
+        }
+        .hero-stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+        }
+        .hero-stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-top: 6px;
+        }
+        .hero-cta {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1.2s ease-out;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-primary {
+            background: var(--gold);
+            color: #0a0a0b;
+        }
+        .btn-primary:hover {
+            background: var(--gold-light);
+            box-shadow: 0 8px 35px rgba(200, 164, 92, 0.35);
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1.5px solid var(--border-light);
+        }
+        .btn-outline:hover {
+            border-color: var(--gold);
+            background: var(--accent-subtle);
+            transform: translateY(-2px);
+        }
+
+        /* ============ SECTIONS ============ */
+        .section {
+            padding: 90px 28px;
+            position: relative;
+        }
+        .section-alt {
+            background: var(--bg-secondary);
+        }
+        .section-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 18px;
+            color: #fff;
+            line-height: 1.2;
+        }
+        .section-desc {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 650px;
+            line-height: 1.7;
+            margin-bottom: 50px;
+        }
+        .divider {
+            width: 50px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+            margin-bottom: 28px;
+        }
+
+        /* ============ BIOGRAPHY ============ */
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+        .bio-text p {
+            color: var(--text-secondary);
+            margin-bottom: 18px;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        .bio-text .highlight {
+            color: var(--gold-light);
+            font-weight: 500;
+        }
+        .bio-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-card);
+        }
+        .bio-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .bio-card .info-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        .bio-card .info-row .icon-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: 50%;
+            margin-top: 7px;
+            flex-shrink: 0;
+        }
+        .bio-card .info-row strong {
+            color: var(--text-primary);
+            display: block;
+            font-size: 0.8rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+
+        /* ============ EDUCATION ============ */
+        .edu-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        .edu-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+        .edu-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition-smooth);
+        }
+        .edu-card:hover::before {
+            transform: scaleX(1);
+        }
+        .edu-card:hover {
+            border-color: var(--border-light);
+            box-shadow: var(--shadow-elevated);
+            transform: translateY(-3px);
+        }
+        .edu-year {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--gold);
+            letter-spacing: 0.06em;
+            margin-bottom: 8px;
+        }
+        .edu-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+        .edu-card .edu-degree {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .edu-card .edu-detail {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        /* ============ EXPERIENCE / BOARDS ============ */
+        .exp-list {
+            display: grid;
+            gap: 16px;
+        }
+        .exp-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px 26px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            transition: var(--transition-smooth);
+            cursor: default;
+        }
+        .exp-item:hover {
+            border-color: var(--border-light);
+            box-shadow: var(--shadow-card);
+            background: var(--bg-card-hover);
+            transform: translateX(3px);
+        }
+        .exp-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.1rem;
+            color: var(--gold);
+        }
+        .exp-content h4 {
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .exp-content .exp-org {
+            color: var(--gold-light);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+        .exp-content p {
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            margin-top: 4px;
+        }
+        .tag {
+            display: inline-block;
+            background: var(--accent-subtle);
+            color: var(--gold-light);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 50px;
+            margin-top: 6px;
+            border: 1px solid rgba(200, 164, 92, 0.15);
+        }
+
+        /* ============ ACHIEVEMENTS ============ */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .achievement-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 26px;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+        .achievement-card:hover {
+            box-shadow: var(--shadow-elevated);
+            border-color: var(--border-light);
+            transform: translateY(-2px);
+        }
+        .achievement-card .ach-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgba(200, 164, 92, 0.2);
+            position: absolute;
+            top: 16px;
+            right: 22px;
+            line-height: 1;
+            pointer-events: none;
+        }
+        .achievement-card h4 {
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            position: relative;
+            z-index: 1;
+        }
+        .achievement-card p {
+            color: var(--text-muted);
+            font-size: 0.84rem;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ============ CONTACT ============ */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+        .contact-info .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 22px;
+            padding: 16px 20px;
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            transition: var(--transition-smooth);
+        }
+        .contact-item:hover {
+            border-color: var(--gold);
+            box-shadow: var(--shadow-gold);
+        }
+        .contact-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--accent-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.2rem;
+        }
+        .contact-item .ci-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+        .contact-item .ci-value {
+            color: #fff;
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .contact-item a.ci-value:hover {
+            color: var(--gold-light);
+        }
+        .contact-note {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            box-shadow: var(--shadow-card);
+        }
+        .contact-note h4 {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 14px;
+        }
+        .contact-note p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        /* ============ FOOTER ============ */
+        .footer {
+            text-align: center;
+            padding: 30px 28px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            letter-spacing: 0.03em;
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 900px) {
+            .hero-inner {
+                display: block;
+                text-align: center;
+            }
+            .hero-image {
+                margin-top: 36px;
+            }
+            .hero-image img {
+                max-width: 100%;
+            }
+            .bio-grid,
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .hero-stats {
+                gap: 24px;
+            }
+            .hero-stat-number {
+                font-size: 2rem;
+            }
+            .edu-cards {
+                grid-template-columns: 1fr;
+            }
+            .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: var(--bg-secondary);
+                flex-direction: column;
+                padding: 90px 28px 40px;
+                gap: 4px;
+                border-left: 1px solid var(--border);
+                transition: var(--transition-smooth);
+                z-index: 999;
+            }
+            .nav-links.open {
+                right: 0;
+            }
+            .nav-links a {
+                display: block;
+                padding: 12px 16px;
+                font-size: 0.95rem;
+                border-radius: var(--radius-sm);
+            }
+            .mobile-toggle {
+                display: block;
+            }
+            .section {
+                padding: 60px 20px;
+            }
+            .hero {
+                padding: 100px 20px 60px;
+            }
+        }
+        @media (max-width: 500px) {
+            .hero-name {
+                font-size: 2.2rem;
+            }
+            .hero-subtitle {
+                font-size: 0.95rem;
+            }
+            .hero-stats {
+                gap: 16px;
+            }
+            .hero-stat-number {
+                font-size: 1.6rem;
+            }
+            .btn {
+                padding: 12px 22px;
+                font-size: 0.82rem;
+            }
+            .exp-item {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* ============ BACK TO TOP ============ */
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 50;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: #0a0a0b;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 25px rgba(200, 164, 92, 0.3);
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            transition: var(--transition-bounce);
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+        .back-to-top:hover {
+            background: var(--gold-light);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(200, 164, 92, 0.45);
+        }
+
+        /* Overlay for mobile menu */
+        .mobile-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition-fast);
+        }
+        .mobile-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Mobile overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Karim<span>Kaliisa</span></a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#bio">Biography</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact" class="cta-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <div class="hero-badge">✦ Executive Portfolio</div>
+                <h1 class="hero-name">
+                    <span class="gold-line">Hajji</span>
+                    Karim Kaliisa
+                </h1>
+                <p class="hero-subtitle">
+                    Over <strong>22 years</strong> of transformative leadership in NGO &amp; Media Administration,
+                    Executive Management, Media Entrepreneurship, and ICT — driving development across East Africa and beyond.
+                </p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">22+</div>
+                        <div class="hero-stat-label">Years Experience</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">7+</div>
+                        <div class="hero-stat-label">Board Positions</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">5</div>
+                        <div class="hero-stat-label">Countries Impacted</div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#bio" class="btn btn-outline">Explore Profile</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Hajji 1.jpeg" alt="Hajji Karim Kaliisa portrait" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Biography Section -->
+    <section class="section" id="bio">
+        <div class="section-container">
+            <div class="section-label">About</div>
+            <h2 class="section-title">Biography</h2>
+            <div class="divider"></div>
+            <div class="bio-grid">
+                <div class="bio-text">
+                    <p>
+                        <span class="highlight">Hajji Karim Kaliisa</span> brings more than
+                        <strong>22 years</strong> of distinguished experience in business management,
+                        delivering excellent results across <span class="highlight">NGO and Media Administration</span>,
+                        Executive Management, Management Consulting, Media Entrepreneurship, and
+                        Information Communication Technology.
+                    </p>
+                    <p>
+                        His career is defined by a steadfast commitment to enhancing development for all,
+                        leveraging media and technology as powerful tools for community transformation
+                        across Uganda and the broader East, Central, and Southern African region.
+                    </p>
+                    <p>
+                        A visionary leader who has pioneered media infrastructure projects, forged
+                        international partnerships, and mobilized communities toward self-confidence
+                        and sustainable development — establishing schools, health units, and social
+                        centers without reliance on foreign aid.
+                    </p>
+                </div>
+                <div class="bio-card">
+                    <h4>Quick Facts</h4>
+                    <div class="info-row">
+                        <div class="icon-dot"></div>
+                        <div>
+                            <strong>Executive Director</strong>
+                            VOA Radio — Board Member
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="icon-dot"></div>
+                        <div>
+                            <strong>Lead Consultant</strong>
+                            Judicial Service Commission, JLOS — Government of Uganda
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="icon-dot"></div>
+                        <div>
+                            <strong>Board Member</strong>
+                            Next Media Services (NBS TV, Sanyuka TV, Salam TV, Next Radio, Nile Post,
+                            Next Communications, Dream Catcher)
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="icon-dot"></div>
+                        <div>
+                            <strong>Board Member</strong>
+                            Pearl FM, Kampala High School
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="icon-dot"></div>
+                        <div>
+                            <strong>Member</strong>
+                            National Broadcasters Association
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-alt" id="education">
+        <div class="section-container">
+            <div class="section-label">Academic Credentials</div>
+            <h2 class="section-title">Education</h2>
+            <div class="divider"></div>
+            <div class="edu-cards">
+                <div class="edu-card">
+                    <div class="edu-year">2006</div>
+                    <h3>Makerere University, Kampala</h3>
+                    <div class="edu-degree">Master of Arts in Human Rights</div>
+                    <div class="edu-detail">
+                        Thesis: <em>"Family Law and the Promotion of Gender Equity"</em> —
+                        A groundbreaking exploration of legal frameworks advancing gender equality.
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">1993 – 1996</div>
+                    <h3>Makerere University</h3>
+                    <div class="edu-degree">Bachelor of Arts — Major in Sociology</div>
+                    <div class="edu-detail">
+                        Comprehensive study of social structures, community development,
+                        and sociological frameworks shaping modern African society.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="section-container">
+            <div class="section-label">Leadership &amp; Governance</div>
+            <h2 class="section-title">Experience &amp; Board Memberships</h2>
+            <div class="divider"></div>
+            <p class="section-desc">
+                A proven track record of executive leadership across media organizations,
+                educational institutions, and government consultative bodies.
+            </p>
+            <div class="exp-list">
+                <div class="exp-item">
+                    <div class="exp-icon">🏛️</div>
+                    <div class="exp-content">
+                        <h4>Lead Consultant</h4>
+                        <span class="exp-org">Judicial Service Commission — JLOS, Government of Uganda</span>
+                        <p>Conducted a comprehensive feasibility and technical study for the establishment
+                            of regional MOS radio stations nationwide. <span class="tag">December 2018</span></p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-icon">📡</div>
+                    <div class="exp-content">
+                        <h4>Board Member</h4>
+                        <span class="exp-org">Next Media Services</span>
+                        <p>Overseeing seven companies: NBS TV, Sanyuka TV, Salam TV, Next Radio,
+                            Nile Post, Next Communications, and Dream Catcher.</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-icon">🎙️</div>
+                    <div class="exp-content">
+                        <h4>Board Member / Resident Director</h4>
+                        <span class="exp-org">Pearl FM</span>
+                        <p>Led the establishment, installation, and management of Pearl FM (2010),
+                            one of the largest radio stations in Kampala and beyond.</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-icon">🎓</div>
+                    <div class="exp-content">
+                        <h4>Board Member</h4>
+                        <span class="exp-org">Kampala High School</span>
+                        <p>Contributing to strategic governance and educational excellence.</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-icon">🌍</div>
+                    <div class="exp-content">
+                        <h4>Executive Director &amp; Board Member</h4>
+                        <span class="exp-org">Voice of Africa (VOA) Radio — Kampala</span>
+                        <p>Managing a network of five repeaters across Uganda under the Union Secretariat,
+                            based in Kololo.</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-icon">📻</div>
+                    <div class="exp-content">
+                        <h4>Member</h4>
+                        <span class="exp-org">National Broadcasters Association</span>
+                        <p>Active contributor to Uganda's broadcasting policy and standards.</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-icon">🏫</div>
+                    <div class="exp-content">
+                        <h4>University Council Member</h4>
+                        <span class="exp-org">Makerere University</span>
+                        <p>Served on various bodies including the University Council, shaping higher
+                            education policy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section section-alt" id="achievements">
+        <div class="section-container">
+            <div class="section-label">Key Milestones</div>
+            <h2 class="section-title">Achievements</h2>
+            <div class="divider"></div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="ach-number">01</div>
+                    <h4>Introduced RVR Broadcasting Equipment</h4>
+                    <p>Brought the leading Italian manufacturer FDI FM/TV Broadcasting Equipment
+                        (RVR) to the East African region, revolutionizing broadcast infrastructure.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-number">02</div>
+                    <h4>Community Mobilization Champion</h4>
+                    <p>Mobilized communities toward self-confidence and self-sustaining development,
+                        establishing schools, health units, and social centers without foreign aid dependency.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-number">03</div>
+                    <h4>Regional Media Information Flow</h4>
+                    <p>Spearheaded a media module enabling seamless information flow within
+                        East, Central, and Southern Africa under the Union framework.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-number">04</div>
+                    <h4>Turkish-Ugandan Media Partnership</h4>
+                    <p>Forged partnerships connecting Turkish modern media technology with Ugandan
+                        stations: Next Radio, Victoria FM, Pearl FM, VOA FM, Radio Masaaba, IUIU FM,
+                        Ribat FM, Bilal FM, NBS TV, and Salam Television.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-number">05</div>
+                    <h4>Journalist Training Initiative</h4>
+                    <p>In partnership with SENA Foundation and TiKA (Turkey), facilitated training
+                        for hundreds of Ugandan journalists in Turkey.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-number">06</div>
+                    <h4>Union of African Radio Stations</h4>
+                    <p>Introduced most Ugandan FM radio stations to the Union of African Radio Stations
+                        based in Khartoum, Sudan.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-number">07</div>
+                    <h4>VOA Regional Expansion</h4>
+                    <p>Led the establishment of Voice of Africa stations in Kampala (Uganda),
+                        Kigali (Rwanda), Bujumbura (Burundi), and Kinshasa (DRC).</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-number">08</div>
+                    <h4>US Government Recognition</h4>
+                    <p>In March 2017, nominated by the US government as one of three members
+                        with a credible record in the Media Industry to join global media experience
+                        exchange.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-number">09</div>
+                    <h4>Established Salam TV &amp; Sanyuka TV</h4>
+                    <p>Founded Salam Television and Sanyuka TV under NBS TV, within the
+                        Next Media Services umbrella.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-number">10</div>
+                    <h4>Turkey Orientation Visits</h4>
+                    <p>Completed two orientation visits to Konya and Ankara, Turkey — the global
+                        hub of media technology and equipment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-container">
+            <div class="section-label">Connect</div>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="divider"></div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <div class="ci-label">WhatsApp / Phone</div>
+                            <a href="tel:+256701555000" class="ci-value">+256 701 555 000</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <div class="ci-label">Alternative Number</div>
+                            <a href="tel:+256772423827" class="ci-value">+256 772 423 827</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <div class="ci-label">Email</div>
+                            <a href="mailto:Karim%20Kaliisa1970@gmail.com" class="ci-value">Karim Kaliisa1970@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-note">
+                    <h4>Available for Consultation</h4>
+                    <p>
+                        Hajji Karim Kaliisa welcomes inquiries related to media consultancy,
+                        executive management advisory, NGO administration, broadcasting infrastructure,
+                        and strategic partnerships across Africa and beyond.
+                    </p>
+                    <p style="color: var(--gold-light); font-weight: 500;">
+                        Reach out via WhatsApp, phone, or email thank y.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> Hajji Karim Kaliisa. All rights reserved. | Executive Portfolio</p>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        (function() {
+            // ============ DOM ELEMENTS ============
+            const navbar = document.getElementById('navbar');
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navLinks = document.getElementById('navLinks');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const backToTop = document.getElementById('backToTop');
+            const heroParticles = document.getElementById('heroParticles');
+            const currentYearSpan = document.getElementById('currentYear');
+
+            // ============ SET CURRENT YEAR ============
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+
+            // ============ HERO PARTICLES ============
+            if (heroParticles) {
+                for (let i = 0; i < 35; i++) {
+                    const particle = document.createElement('div');
+                    particle.classList.add('hero-particle');
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.animationDelay = Math.random() * 8 + 's';
+                    particle.style.animationDuration = (6 + Math.random() * 10) + 's';
+                    particle.style.width = (1 + Math.random() * 2.5) + 'px';
+                    particle.style.height = particle.style.width;
+                    heroParticles.appendChild(particle);
+                }
+            }
+
+            // ============ SCROLL HANDLER ============
+            function handleScroll() {
+                const scrollY = window.scrollY;
+
+                // Navbar shadow
+                if (scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+
+                // Back to top visibility
+                if (scrollY > 600) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }
+            window.addEventListener('scroll', handleScroll, { passive: true });
+
+            // ============ MOBILE MENU ============
+            function openMenu() {
+                navLinks.classList.add('open');
+                mobileOverlay.classList.add('active');
+                mobileToggle.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                navLinks.classList.remove('open');
+                mobileOverlay.classList.remove('active');
+                mobileToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            mobileToggle.addEventListener('click', () => {
+                if (navLinks.classList.contains('open')) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+            });
+
+            mobileOverlay.addEventListener('click', closeMenu);
+
+            // Close menu when a nav link is clicked
+            const allNavLinks = navLinks.querySelectorAll('a');
+            allNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('open')) {
+                        closeMenu();
+                    }
+                });
+            });
+
+            // ============ BACK TO TOP ============
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // ============ ESC KEY TO CLOSE MENU ============
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+                    closeMenu();
+                    mobileToggle.focus();
+                }
+            });
+
+            // ============ INITIAL SCROLL CHECK ============
+            handleScroll();
+
+            // ============ SMOOTH SCROLL FOR ALL ANCHOR LINKS ============
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const navHeight = navbar.offsetHeight;
+                        const targetPosition = target.getBoundingClientRect().top + window
+                            .scrollY - navHeight - 10;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // ============ INTERSECTION OBSERVER FOR FADE-IN ANIMATIONS ============
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -40px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe achievement cards and experience items for subtle entrance
+            document.querySelectorAll('.achievement-card, .exp-item, .edu-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(el);
+            });
+
+            // Stagger the observation slightly
+            setTimeout(() => {
+                document.querySelectorAll('.achievement-card, .exp-item, .edu-card').forEach(
+                (el, i) => {
+                    el.style.transitionDelay = (i * 0.04) + 's';
+                });
+            }, 100);
+
+            console.log('%c Hajji Karim Kaliisa — Executive Portfolio %c Ready ',
+                'background:#c8a45c;color:#0a0a0b;padding:6px 12px;border-radius:4px;font-weight:700;',
+                'color:#c8a45c;');
+            console.log('%c 22+ Years of Excellence in Media & Executive Leadership ',
+                'color:#b0aea6;font-style:italic;');
+        })();
+    </script>
+</body>
+</html>
