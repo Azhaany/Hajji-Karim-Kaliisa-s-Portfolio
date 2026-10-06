@@ -1,1409 +1,785 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hajji Karim Kaliisa — Executive Portfolio</title>
-    <meta name="description" content="Hajji Karim Kaliisa — 22+ years of Executive Management, Media Entrepreneurship & ICT leadership across East Africa. Board Member, Consultant, and Visionary Leader.">
-    <meta name="keywords" content="Hajji Karim Kaliisa, Executive Management, Media Consultant, Uganda, VOA Radio, Pearl FM, Next Media, Board Member, NGO Administration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Hajji Karim Kaliisa â€” Executive Portfolio</title>
+    <meta name="description"
+        content="Hajji Karim Kaliisa â€” 22+ years of Executive Management, Media Entrepreneurship & ICT leadership across East Africa. Board Member, Consultant, and Visionary Leader.">
+    <meta name="keywords"
+        content="Hajji Karim Kaliisa, Executive Management, Media Consultant, Uganda, VOA Radio, Pearl FM, Next Media, Board Member, NGO Administration">
     <meta name="author" content="Hajji Karim Kaliisa">
+
+    <!-- Modern Executive Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.svg">
+
+    <!-- Preconnect & Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-primary: #0a0a0b;
-            --bg-secondary: #111114;
-            --bg-card: #16161b;
-            --bg-card-hover: #1c1c23;
-            --gold: #c8a45c;
-            --gold-light: #d4b872;
-            --gold-dark: #a8863a;
-            --text-primary: #e8e6e1;
-            --text-secondary: #b0aea6;
-            --text-muted: #7a7872;
-            --border: #252530;
-            --border-light: #2e2e3a;
-            --accent: #c8a45c;
-            --accent-subtle: rgba(200, 164, 92, 0.08);
-            --accent-glow: rgba(200, 164, 92, 0.15);
-            --radius-sm: 8px;
-            --radius: 12px;
-            --radius-lg: 20px;
-            --radius-xl: 28px;
-            --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 20px rgba(0, 0, 0, 0.3);
-            --shadow-elevated: 0 8px 40px rgba(0, 0, 0, 0.5);
-            --shadow-gold: 0 0 60px rgba(200, 164, 92, 0.08);
-            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            overflow-x: hidden;
-            letter-spacing: -0.01em;
-        }
-        ::selection {
-            background: var(--accent);
-            color: #0a0a0b;
-        }
-
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: var(--bg-primary);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--border-light);
-            border-radius: 3px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--text-muted);
-        }
-
-        /* ============ NAVIGATION ============ */
-        .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: rgba(10, 10, 11, 0.82);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            border-bottom: 1px solid var(--border);
-            transition: var(--transition-smooth);
-        }
-        .nav.scrolled {
-            background: rgba(10, 10, 11, 0.94);
-            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
-        }
-        .nav-container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 28px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 68px;
-        }
-        .nav-logo {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            font-size: 1.35rem;
-            color: var(--text-primary);
-            text-decoration: none;
-            letter-spacing: -0.02em;
-            white-space: nowrap;
-        }
-        .nav-logo span {
-            color: var(--gold);
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 6px;
-            align-items: center;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-secondary);
-            font-size: 0.875rem;
-            font-weight: 500;
-            padding: 8px 16px;
-            border-radius: 50px;
-            transition: var(--transition-fast);
-            letter-spacing: 0.01em;
-            white-space: nowrap;
-        }
-        .nav-links a:hover,
-        .nav-links a:focus-visible {
-            color: #fff;
-            background: var(--accent-subtle);
-        }
-        .nav-links a.cta-nav {
-            background: var(--gold);
-            color: #0a0a0b;
-            font-weight: 600;
-            padding: 9px 20px;
-        }
-        .nav-links a.cta-nav:hover {
-            background: var(--gold-light);
-            box-shadow: 0 4px 20px rgba(200, 164, 92, 0.3);
-        }
-        .mobile-toggle {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-            color: var(--text-primary);
-            z-index: 1001;
-        }
-        .mobile-toggle span {
-            display: block;
-            width: 26px;
-            height: 2px;
-            background: var(--text-primary);
-            margin: 6px 0;
-            border-radius: 2px;
-            transition: var(--transition-fast);
-        }
-        .mobile-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 6px);
-        }
-        .mobile-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-        .mobile-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -6px);
-        }
-
-        /* ============ HERO ============ */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding: 120px 28px 80px;
-            background: radial-gradient(ellipse 70% 60% at 50% 30%, rgba(200, 164, 92, 0.05) 0%, transparent 70%),
-                radial-gradient(ellipse at 80% 20%, rgba(200, 164, 92, 0.03) 0%, transparent 50%),
-                var(--bg-primary);
-            overflow: hidden;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -30%;
-            right: -20%;
-            width: 700px;
-            height: 700px;
-            background: radial-gradient(circle, rgba(200, 164, 92, 0.04) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-        .hero-particles {
-            position: absolute;
-            inset: 0;
-            pointer-events: none;
-            overflow: hidden;
-        }
-        .hero-particle {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: var(--gold);
-            border-radius: 50%;
-            opacity: 0;
-            animation: floatUp 8s infinite;
-        }
-        @keyframes floatUp {
-            0% {
-                transform: translateY(100vh) scale(0);
-                opacity: 0;
-            }
-            10% {
-                opacity: 0.7;
-            }
-            50% {
-                opacity: 0.3;
-            }
-            90% {
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(-10vh) scale(1.5);
-                opacity: 0;
-            }
-        }
-        .hero-inner {
-            max-width: 1100px;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 420px;
-            gap: 42px;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-            text-align: left;
-        }
-        .hero-copy {
-            max-width: 680px;
-        }
-        .hero-image {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .hero-image img {
-            width: 100%;
-            max-width: 420px;
-            border-radius: 28px;
-            border: 1px solid var(--border);
-            box-shadow: var(--shadow-card);
-            object-fit: cover;
-            transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
-        }
-        .hero-image img:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-elevated);
-        }
-        .hero-badge {
-            display: inline-block;
-            background: var(--accent-subtle);
-            border: 1px solid rgba(200, 164, 92, 0.2);
-            color: var(--gold-light);
-            font-size: 0.8rem;
-            font-weight: 600;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            padding: 8px 18px;
-            border-radius: 50px;
-            margin-bottom: 28px;
-            animation: fadeInDown 0.8s ease-out;
-        }
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .hero-name {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.8rem, 6.5vw, 5.5rem);
-            font-weight: 700;
-            line-height: 1.08;
-            letter-spacing: -0.03em;
-            margin-bottom: 20px;
-            color: #fff;
-            animation: fadeInUp 0.9s ease-out;
-        }
-        .hero-name .gold-line {
-            display: block;
-            color: var(--gold);
-            font-size: 0.35em;
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-bottom: 6px;
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .hero-subtitle {
-            font-size: 1.15rem;
-            color: var(--text-secondary);
-            max-width: 650px;
-            margin: 0 auto 36px;
-            font-weight: 400;
-            line-height: 1.6;
-            animation: fadeInUp 1s ease-out;
-        }
-        .hero-stats {
-            display: flex;
-            gap: 40px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-            animation: fadeInUp 1.1s ease-out;
-        }
-        .hero-stat {
-            text-align: center;
-        }
-        .hero-stat-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.6rem;
-            font-weight: 700;
-            color: var(--gold);
-            line-height: 1;
-        }
-        .hero-stat-label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            margin-top: 6px;
-        }
-        .hero-cta {
-            display: flex;
-            gap: 14px;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeInUp 1.2s ease-out;
-        }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 14px 28px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-decoration: none;
-            letter-spacing: 0.02em;
-            transition: var(--transition-smooth);
-            cursor: pointer;
-            border: none;
-            font-family: 'Inter', sans-serif;
-        }
-        .btn-primary {
-            background: var(--gold);
-            color: #0a0a0b;
-        }
-        .btn-primary:hover {
-            background: var(--gold-light);
-            box-shadow: 0 8px 35px rgba(200, 164, 92, 0.35);
-            transform: translateY(-2px);
-        }
-        .btn-outline {
-            background: transparent;
-            color: var(--text-primary);
-            border: 1.5px solid var(--border-light);
-        }
-        .btn-outline:hover {
-            border-color: var(--gold);
-            background: var(--accent-subtle);
-            transform: translateY(-2px);
-        }
-
-        /* ============ SECTIONS ============ */
-        .section {
-            padding: 90px 28px;
-            position: relative;
-        }
-        .section-alt {
-            background: var(--bg-secondary);
-        }
-        .section-container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .section-label {
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 10px;
-        }
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 18px;
-            color: #fff;
-            line-height: 1.2;
-        }
-        .section-desc {
-            color: var(--text-secondary);
-            font-size: 1.05rem;
-            max-width: 650px;
-            line-height: 1.7;
-            margin-bottom: 50px;
-        }
-        .divider {
-            width: 50px;
-            height: 3px;
-            background: var(--gold);
-            border-radius: 2px;
-            margin-bottom: 28px;
-        }
-
-        /* ============ BIOGRAPHY ============ */
-        .bio-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: start;
-        }
-        .bio-text p {
-            color: var(--text-secondary);
-            margin-bottom: 18px;
-            font-size: 1rem;
-            line-height: 1.8;
-        }
-        .bio-text .highlight {
-            color: var(--gold-light);
-            font-weight: 500;
-        }
-        .bio-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            padding: 32px;
-            box-shadow: var(--shadow-card);
-        }
-        .bio-card h4 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            color: #fff;
-        }
-        .bio-card .info-row {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 16px;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-        .bio-card .info-row .icon-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--gold);
-            border-radius: 50%;
-            margin-top: 7px;
-            flex-shrink: 0;
-        }
-        .bio-card .info-row strong {
-            color: var(--text-primary);
-            display: block;
-            font-size: 0.8rem;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            margin-bottom: 2px;
-        }
-
-        /* ============ EDUCATION ============ */
-        .edu-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 24px;
-        }
-        .edu-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            padding: 30px;
-            transition: var(--transition-smooth);
-            position: relative;
-            overflow: hidden;
-        }
-        .edu-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: var(--gold);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: var(--transition-smooth);
-        }
-        .edu-card:hover::before {
-            transform: scaleX(1);
-        }
-        .edu-card:hover {
-            border-color: var(--border-light);
-            box-shadow: var(--shadow-elevated);
-            transform: translateY(-3px);
-        }
-        .edu-year {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            color: var(--gold);
-            letter-spacing: 0.06em;
-            margin-bottom: 8px;
-        }
-        .edu-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.25rem;
-            color: #fff;
-            margin-bottom: 6px;
-        }
-        .edu-card .edu-degree {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-        .edu-card .edu-detail {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            line-height: 1.5;
-        }
-
-        /* ============ EXPERIENCE / BOARDS ============ */
-        .exp-list {
-            display: grid;
-            gap: 16px;
-        }
-        .exp-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 22px 26px;
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            transition: var(--transition-smooth);
-            cursor: default;
-        }
-        .exp-item:hover {
-            border-color: var(--border-light);
-            box-shadow: var(--shadow-card);
-            background: var(--bg-card-hover);
-            transform: translateX(3px);
-        }
-        .exp-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: var(--accent-subtle);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            font-size: 1.1rem;
-            color: var(--gold);
-        }
-        .exp-content h4 {
-            color: #fff;
-            font-size: 0.95rem;
-            font-weight: 600;
-            margin-bottom: 2px;
-        }
-        .exp-content .exp-org {
-            color: var(--gold-light);
-            font-size: 0.8rem;
-            font-weight: 500;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-        }
-        .exp-content p {
-            color: var(--text-muted);
-            font-size: 0.82rem;
-            margin-top: 4px;
-        }
-        .tag {
-            display: inline-block;
-            background: var(--accent-subtle);
-            color: var(--gold-light);
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            padding: 4px 10px;
-            border-radius: 50px;
-            margin-top: 6px;
-            border: 1px solid rgba(200, 164, 92, 0.15);
-        }
-
-        /* ============ ACHIEVEMENTS ============ */
-        .achievements-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .achievement-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 26px;
-            transition: var(--transition-smooth);
-            position: relative;
-        }
-        .achievement-card:hover {
-            box-shadow: var(--shadow-elevated);
-            border-color: var(--border-light);
-            transform: translateY(-2px);
-        }
-        .achievement-card .ach-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            font-weight: 700;
-            color: rgba(200, 164, 92, 0.2);
-            position: absolute;
-            top: 16px;
-            right: 22px;
-            line-height: 1;
-            pointer-events: none;
-        }
-        .achievement-card h4 {
-            color: #fff;
-            font-size: 0.95rem;
-            font-weight: 600;
-            margin-bottom: 6px;
-            position: relative;
-            z-index: 1;
-        }
-        .achievement-card p {
-            color: var(--text-muted);
-            font-size: 0.84rem;
-            line-height: 1.6;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ============ CONTACT ============ */
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: start;
-        }
-        .contact-info .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 22px;
-            padding: 16px 20px;
-            background: var(--bg-card);
-            border-radius: var(--radius);
-            border: 1px solid var(--border);
-            transition: var(--transition-smooth);
-        }
-        .contact-item:hover {
-            border-color: var(--gold);
-            box-shadow: var(--shadow-gold);
-        }
-        .contact-icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: var(--accent-subtle);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            font-size: 1.2rem;
-        }
-        .contact-item .ci-label {
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-        .contact-item .ci-value {
-            color: #fff;
-            font-weight: 500;
-            font-size: 0.95rem;
-            text-decoration: none;
-            word-break: break-all;
-        }
-        .contact-item a.ci-value:hover {
-            color: var(--gold-light);
-        }
-        .contact-note {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
-            padding: 30px;
-            box-shadow: var(--shadow-card);
-        }
-        .contact-note h4 {
-            font-family: 'Playfair Display', serif;
-            color: #fff;
-            font-size: 1.3rem;
-            margin-bottom: 14px;
-        }
-        .contact-note p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.7;
-            margin-bottom: 10px;
-        }
-
-        /* ============ FOOTER ============ */
-        .footer {
-            text-align: center;
-            padding: 30px 28px;
-            border-top: 1px solid var(--border);
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            letter-spacing: 0.03em;
-        }
-
-        /* ============ RESPONSIVE ============ */
-        @media (max-width: 900px) {
-            .hero-inner {
-                display: block;
-                text-align: center;
-            }
-            .hero-image {
-                margin-top: 36px;
-            }
-            .hero-image img {
-                max-width: 100%;
-            }
-            .bio-grid,
-            .contact-wrapper {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-            .hero-stats {
-                gap: 24px;
-            }
-            .hero-stat-number {
-                font-size: 2rem;
-            }
-            .edu-cards {
-                grid-template-columns: 1fr;
-            }
-            .achievements-grid {
-                grid-template-columns: 1fr;
-            }
-            .nav-links {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 280px;
-                height: 100vh;
-                background: var(--bg-secondary);
-                flex-direction: column;
-                padding: 90px 28px 40px;
-                gap: 4px;
-                border-left: 1px solid var(--border);
-                transition: var(--transition-smooth);
-                z-index: 999;
-            }
-            .nav-links.open {
-                right: 0;
-            }
-            .nav-links a {
-                display: block;
-                padding: 12px 16px;
-                font-size: 0.95rem;
-                border-radius: var(--radius-sm);
-            }
-            .mobile-toggle {
-                display: block;
-            }
-            .section {
-                padding: 60px 20px;
-            }
-            .hero {
-                padding: 100px 20px 60px;
-            }
-        }
-        @media (max-width: 500px) {
-            .hero-name {
-                font-size: 2.2rem;
-            }
-            .hero-subtitle {
-                font-size: 0.95rem;
-            }
-            .hero-stats {
-                gap: 16px;
-            }
-            .hero-stat-number {
-                font-size: 1.6rem;
-            }
-            .btn {
-                padding: 12px 22px;
-                font-size: 0.82rem;
-            }
-            .exp-item {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .section-title {
-                font-size: 1.6rem;
-            }
-        }
-
-        /* ============ BACK TO TOP ============ */
-        .back-to-top {
-            position: fixed;
-            bottom: 28px;
-            right: 28px;
-            z-index: 50;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: var(--gold);
-            color: #0a0a0b;
-            border: none;
-            cursor: pointer;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 6px 25px rgba(200, 164, 92, 0.3);
-            opacity: 0;
-            transform: translateY(20px);
-            pointer-events: none;
-            transition: var(--transition-bounce);
-        }
-        .back-to-top.visible {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: auto;
-        }
-        .back-to-top:hover {
-            background: var(--gold-light);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 35px rgba(200, 164, 92, 0.45);
-        }
-
-        /* Overlay for mobile menu */
-        .mobile-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 998;
-            opacity: 0;
-            pointer-events: none;
-            transition: var(--transition-fast);
-        }
-        .mobile-overlay.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Mobile overlay -->
-    <div class="mobile-overlay" id="mobileOverlay"></div>
 
-    <!-- Navigation -->
-    <nav class="nav" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">Karim<span>Kaliisa</span></a>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#bio">Biography</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact" class="cta-nav">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<body>
+
+    <!-- Mobile Drawer Blur Overlay -->
+    <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+
+    <!-- Neumorphic Navigation Bar -->
+    <header class="nav-wrapper">
+        <nav class="nav-container" id="navbar">
+            <a href="#hero" class="nav-logo" aria-label="Karim Kaliisa Home">
+                <div class="nav-logo-badge">K</div>
+                <div>Karim<span>Kaliisa</span></div>
+            </a>
+
+            <div class="nav-right-cluster">
+                <ul class="nav-links" id="navLinks">
+                    <!-- Mobile Drawer Header -->
+                    <li class="drawer-header">
+                        <span class="drawer-title">Navigation</span>
+                        <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">&times;</button>
+                    </li>
+                    <li><a href="#bio">Biography</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Governance</a></li>
+                    <li><a href="#achievements">Milestones</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Tactile Theme Toggle -->
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Color Theme"
+                    title="Toggle Light/Dark Theme">
+                    <!-- Moon Icon (for Light Mode) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <!-- Sun Icon (for Dark Mode) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-particles" id="heroParticles"></div>
-        <div class="hero-inner">
-            <div class="hero-copy">
-                <div class="hero-badge">✦ Executive Portfolio</div>
-                <h1 class="hero-name">
-                    <span class="gold-line">Hajji</span>
-                    Karim Kaliisa
-                </h1>
-                <p class="hero-subtitle">
-                    Over <strong>22 years</strong> of transformative leadership in NGO &amp; Media Administration,
-                    Executive Management, Media Entrepreneurship, and ICT — driving development across East Africa and beyond.
-                </p>
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">22+</div>
-                        <div class="hero-stat-label">Years Experience</div>
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hajji <span class="name-highlight">Karim Kaliisa</span>
+                    </h1>
+                    <div class="hero-subtitle-role">
+                        Executive Leader â€¢ Media Entrepreneur â€¢ ICT Strategist
                     </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">7+</div>
-                        <div class="hero-stat-label">Board Positions</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">5</div>
-                        <div class="hero-stat-label">Countries Impacted</div>
-                    </div>
-                </div>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#bio" class="btn btn-outline">Explore Profile</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="Hajji 1.jpeg" alt="Hajji Karim Kaliisa portrait" onerror="this.style.display='none'">
-            </div>
-        </div>
-    </section>
-
-    <!-- Biography Section -->
-    <section class="section" id="bio">
-        <div class="section-container">
-            <div class="section-label">About</div>
-            <h2 class="section-title">Biography</h2>
-            <div class="divider"></div>
-            <div class="bio-grid">
-                <div class="bio-text">
-                    <p>
-                        <span class="highlight">Hajji Karim Kaliisa</span> brings more than
-                        <strong>22 years</strong> of distinguished experience in business management,
-                        delivering excellent results across <span class="highlight">NGO and Media Administration</span>,
-                        Executive Management, Management Consulting, Media Entrepreneurship, and
-                        Information Communication Technology.
+                    <p class="hero-desc">
+                        Over <strong>22 years</strong> of transformative leadership in NGO &amp; Media Administration,
+                        Executive Advisory, and Broadcast Infrastructure â€” mobilizing communities and driving
+                        socioeconomic progress across East Africa and beyond.
                     </p>
-                    <p>
-                        His career is defined by a steadfast commitment to enhancing development for all,
-                        leveraging media and technology as powerful tools for community transformation
-                        across Uganda and the broader East, Central, and Southern African region.
-                    </p>
-                    <p>
-                        A visionary leader who has pioneered media infrastructure projects, forged
-                        international partnerships, and mobilized communities toward self-confidence
-                        and sustainable development — establishing schools, health units, and social
-                        centers without reliance on foreign aid.
-                    </p>
+
+                    <!-- Tactile Metrics -->
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <div class="metric-value">22+</div>
+                            <div class="metric-label">Years Leadership</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">7+</div>
+                            <div class="metric-label">Board Positions</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">5</div>
+                            <div class="metric-label">Nations Impacted</div>
+                        </div>
+                    </div>
+
+                    <!-- Tactile Buttons -->
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Connect with Hajji</span>
+                            <span class="btn-icon-wrapper">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="#bio" class="btn btn-secondary">
+                            <span>Explore Credentials</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="bio-card">
-                    <h4>Quick Facts</h4>
-                    <div class="info-row">
-                        <div class="icon-dot"></div>
-                        <div>
-                            <strong>Executive Director</strong>
-                            VOA Radio — Board Member
+
+                <!-- Neumorphic Portrait Plate -->
+                <div class="hero-portrait-wrapper">
+                    <div class="portrait-plate">
+                        <div class="portrait-inner-frame">
+                            <img src="Hajji 1.jpeg" alt="Hajji Karim Kaliisa â€” Executive Portrait" class="portrait-img"
+                                onerror="this.src='profile.svg'">
                         </div>
-                    </div>
-                    <div class="info-row">
-                        <div class="icon-dot"></div>
-                        <div>
-                            <strong>Lead Consultant</strong>
-                            Judicial Service Commission, JLOS — Government of Uganda
-                        </div>
-                    </div>
-                    <div class="info-row">
-                        <div class="icon-dot"></div>
-                        <div>
-                            <strong>Board Member</strong>
-                            Next Media Services (NBS TV, Sanyuka TV, Salam TV, Next Radio, Nile Post,
-                            Next Communications, Dream Catcher)
-                        </div>
-                    </div>
-                    <div class="info-row">
-                        <div class="icon-dot"></div>
-                        <div>
-                            <strong>Board Member</strong>
-                            Pearl FM, Kampala High School
-                        </div>
-                    </div>
-                    <div class="info-row">
-                        <div class="icon-dot"></div>
-                        <div>
-                            <strong>Member</strong>
-                            National Broadcasters Association
+                        <div class="portrait-floating-badge">
+                            <span class="badge-verified-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                            </span>
+                            <span>Executive Leader</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education Section -->
-    <section class="section section-alt" id="education">
-        <div class="section-container">
-            <div class="section-label">Academic Credentials</div>
-            <h2 class="section-title">Education</h2>
-            <div class="divider"></div>
-            <div class="edu-cards">
-                <div class="edu-card">
-                    <div class="edu-year">2006</div>
-                    <h3>Makerere University, Kampala</h3>
-                    <div class="edu-degree">Master of Arts in Human Rights</div>
-                    <div class="edu-detail">
-                        Thesis: <em>"Family Law and the Promotion of Gender Equity"</em> —
-                        A groundbreaking exploration of legal frameworks advancing gender equality.
-                    </div>
+        <!-- Biography Section -->
+        <section class="section-block" id="bio">
+            <div class="section-inner">
+                <div class="section-header">
+                    <div class="section-tag">About Hajji</div>
+                    <h2 class="section-title">Executive Biography</h2>
+                    <p class="section-lead">A legacy of visionary management, regional media innovation, and
+                        self-sustaining community empowerment.</p>
                 </div>
-                <div class="edu-card">
-                    <div class="edu-year">1993 – 1996</div>
-                    <h3>Makerere University</h3>
-                    <div class="edu-degree">Bachelor of Arts — Major in Sociology</div>
-                    <div class="edu-detail">
-                        Comprehensive study of social structures, community development,
-                        and sociological frameworks shaping modern African society.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section class="section" id="experience">
-        <div class="section-container">
-            <div class="section-label">Leadership &amp; Governance</div>
-            <h2 class="section-title">Experience &amp; Board Memberships</h2>
-            <div class="divider"></div>
-            <p class="section-desc">
-                A proven track record of executive leadership across media organizations,
-                educational institutions, and government consultative bodies.
-            </p>
-            <div class="exp-list">
-                <div class="exp-item">
-                    <div class="exp-icon">🏛️</div>
-                    <div class="exp-content">
-                        <h4>Lead Consultant</h4>
-                        <span class="exp-org">Judicial Service Commission — JLOS, Government of Uganda</span>
-                        <p>Conducted a comprehensive feasibility and technical study for the establishment
-                            of regional MOS radio stations nationwide. <span class="tag">December 2018</span></p>
+                <div class="bio-layout">
+                    <!-- Left: Narrative -->
+                    <div class="nm-card bio-prose-card">
+                        <p>
+                            <strong class="highlight-text">Hajji Karim Kaliisa</strong> brings over <span
+                                class="highlight-text">22 years</span> of executive experience,
+                            consistently delivering high-impact governance and strategic growth across <strong>NGO &amp;
+                                Media Administration</strong>, Executive Management, Management Consulting, Media
+                            Entrepreneurship, and Information Communication Technology.
+                        </p>
+                        <p>
+                            His career is characterized by an unwavering dedication to inclusive community development.
+                            Hajji Karim has spearheaded state-of-the-art media and telecommunications infrastructure,
+                            forged cross-continental technology partnerships, and mobilized civil society across Uganda
+                            and the broader East, Central, and Southern African regions.
+                        </p>
+                        <p>
+                            A pioneering developer of regional self-reliance, he has championed initiatives that
+                            established academic centers, healthcare units, and civic infrastructure without reliance on
+                            external foreign aid, demonstrating the immense power of disciplined local leadership and
+                            collective purpose.
+                        </p>
                     </div>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-icon">📡</div>
-                    <div class="exp-content">
-                        <h4>Board Member</h4>
-                        <span class="exp-org">Next Media Services</span>
-                        <p>Overseeing seven companies: NBS TV, Sanyuka TV, Salam TV, Next Radio,
-                            Nile Post, Next Communications, and Dream Catcher.</p>
-                    </div>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-icon">🎙️</div>
-                    <div class="exp-content">
-                        <h4>Board Member / Resident Director</h4>
-                        <span class="exp-org">Pearl FM</span>
-                        <p>Led the establishment, installation, and management of Pearl FM (2010),
-                            one of the largest radio stations in Kampala and beyond.</p>
-                    </div>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-icon">🎓</div>
-                    <div class="exp-content">
-                        <h4>Board Member</h4>
-                        <span class="exp-org">Kampala High School</span>
-                        <p>Contributing to strategic governance and educational excellence.</p>
-                    </div>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-icon">🌍</div>
-                    <div class="exp-content">
-                        <h4>Executive Director &amp; Board Member</h4>
-                        <span class="exp-org">Voice of Africa (VOA) Radio — Kampala</span>
-                        <p>Managing a network of five repeaters across Uganda under the Union Secretariat,
-                            based in Kololo.</p>
-                    </div>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-icon">📻</div>
-                    <div class="exp-content">
-                        <h4>Member</h4>
-                        <span class="exp-org">National Broadcasters Association</span>
-                        <p>Active contributor to Uganda's broadcasting policy and standards.</p>
-                    </div>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-icon">🏫</div>
-                    <div class="exp-content">
-                        <h4>University Council Member</h4>
-                        <span class="exp-org">Makerere University</span>
-                        <p>Served on various bodies including the University Council, shaping higher
-                            education policy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Achievements Section -->
-    <section class="section section-alt" id="achievements">
-        <div class="section-container">
-            <div class="section-label">Key Milestones</div>
-            <h2 class="section-title">Achievements</h2>
-            <div class="divider"></div>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="ach-number">01</div>
-                    <h4>Introduced RVR Broadcasting Equipment</h4>
-                    <p>Brought the leading Italian manufacturer FDI FM/TV Broadcasting Equipment
-                        (RVR) to the East African region, revolutionizing broadcast infrastructure.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="ach-number">02</div>
-                    <h4>Community Mobilization Champion</h4>
-                    <p>Mobilized communities toward self-confidence and self-sustaining development,
-                        establishing schools, health units, and social centers without foreign aid dependency.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="ach-number">03</div>
-                    <h4>Regional Media Information Flow</h4>
-                    <p>Spearheaded a media module enabling seamless information flow within
-                        East, Central, and Southern Africa under the Union framework.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="ach-number">04</div>
-                    <h4>Turkish-Ugandan Media Partnership</h4>
-                    <p>Forged partnerships connecting Turkish modern media technology with Ugandan
-                        stations: Next Radio, Victoria FM, Pearl FM, VOA FM, Radio Masaaba, IUIU FM,
-                        Ribat FM, Bilal FM, NBS TV, and Salam Television.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="ach-number">05</div>
-                    <h4>Journalist Training Initiative</h4>
-                    <p>In partnership with SENA Foundation and TiKA (Turkey), facilitated training
-                        for hundreds of Ugandan journalists in Turkey.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="ach-number">06</div>
-                    <h4>Union of African Radio Stations</h4>
-                    <p>Introduced most Ugandan FM radio stations to the Union of African Radio Stations
-                        based in Khartoum, Sudan.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="ach-number">07</div>
-                    <h4>VOA Regional Expansion</h4>
-                    <p>Led the establishment of Voice of Africa stations in Kampala (Uganda),
-                        Kigali (Rwanda), Bujumbura (Burundi), and Kinshasa (DRC).</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="ach-number">08</div>
-                    <h4>US Government Recognition</h4>
-                    <p>In March 2017, nominated by the US government as one of three members
-                        with a credible record in the Media Industry to join global media experience
-                        exchange.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="ach-number">09</div>
-                    <h4>Established Salam TV &amp; Sanyuka TV</h4>
-                    <p>Founded Salam Television and Sanyuka TV under NBS TV, within the
-                        Next Media Services umbrella.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="ach-number">10</div>
-                    <h4>Turkey Orientation Visits</h4>
-                    <p>Completed two orientation visits to Konya and Ankara, Turkey — the global
-                        hub of media technology and equipment.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <!-- Right: Quick Facts Dashboard -->
+                    <div class="nm-card facts-card">
+                        <h3 class="facts-card-title">
+                            <span>Key Appointments</span>
+                        </h3>
+                        <div class="facts-list">
+                            <div class="fact-item">
+                                <div class="nm-socket fact-socket">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                        <line x1="4" y1="22" x2="4" y2="15"></line>
+                                    </svg>
+                                </div>
+                                <div class="fact-content">
+                                    <h4>Executive Director &amp; Board Member</h4>
+                                    <p>Voice of Africa (VOA) Radio Secretariat, Kololo</p>
+                                </div>
+                            </div>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="section-container">
-            <div class="section-label">Connect</div>
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="divider"></div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <div class="ci-label">WhatsApp / Phone</div>
-                            <a href="tel:+256701555000" class="ci-value">+256 701 555 000</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <div class="ci-label">Alternative Number</div>
-                            <a href="tel:+256772423827" class="ci-value">+256 772 423 827</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">✉️</div>
-                        <div>
-                            <div class="ci-label">Email</div>
-                            <a href="mailto:Karim%20Kaliisa1970@gmail.com" class="ci-value">Karim Kaliisa1970@gmail.com</a>
+                            <div class="fact-item">
+                                <div class="nm-socket fact-socket">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                        <polyline points="2 17 12 22 22 17"></polyline>
+                                        <polyline points="2 12 12 17 22 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="fact-content">
+                                    <h4>Lead Consultant</h4>
+                                    <p>Judicial Service Commission, JLOS â€” Government of Uganda</p>
+                                </div>
+                            </div>
+
+                            <div class="fact-item">
+                                <div class="nm-socket fact-socket">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                                        <polyline points="17 2 12 7 7 2"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="fact-content">
+                                    <h4>Board Member</h4>
+                                    <p>Next Media Services (NBS TV, Sanyuka TV, Salam TV, Next Radio, Nile Post)</p>
+                                </div>
+                            </div>
+
+                            <div class="fact-item">
+                                <div class="nm-socket fact-socket">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                                <div class="fact-content">
+                                    <h4>Resident Director &amp; Board Member</h4>
+                                    <p>Pearl FM &amp; Kampala High School</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="contact-note">
-                    <h4>Available for Consultation</h4>
-                    <p>
-                        Hajji Karim Kaliisa welcomes inquiries related to media consultancy,
-                        executive management advisory, NGO administration, broadcasting infrastructure,
-                        and strategic partnerships across Africa and beyond.
-                    </p>
-                    <p style="color: var(--gold-light); font-weight: 500;">
-                        Reach out via WhatsApp, phone, or email thank you.
-                    </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section-block" id="education">
+            <div class="section-inner">
+                <div class="section-header">
+                    <div class="section-tag">Academic Credentials</div>
+                    <h2 class="section-title">Education &amp; Scholarship</h2>
+                    <p class="section-lead">Advanced academic foundations in sociological frameworks, human rights law,
+                        and institutional equity.</p>
+                </div>
+
+                <div class="edu-grid">
+                    <div class="nm-card edu-item-card">
+                        <div class="edu-header-row">
+                            <span class="edu-year-chip">2006</span>
+                            <div class="nm-socket edu-icon-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="edu-university">Makerere University, Kampala</h3>
+                        <div class="edu-degree-title">Master of Arts in Human Rights</div>
+                        <p class="edu-details">
+                            Thesis: <em>"Family Law and the Promotion of Gender Equity"</em> â€” A landmark academic and
+                            legal exploration into statutory and customary frameworks governing gender balance and
+                            social rights.
+                        </p>
+                    </div>
+
+                    <div class="nm-card edu-item-card">
+                        <div class="edu-header-row">
+                            <span class="edu-year-chip">1993 â€“ 1996</span>
+                            <div class="nm-socket edu-icon-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="edu-university">Makerere University</h3>
+                        <div class="edu-degree-title">Bachelor of Arts (Sociology Major)</div>
+                        <p class="edu-details">
+                            In-depth sociological scholarship examining community structures, modern African
+                            institutional systems, demographic transformation, and grass-roots socio-economic
+                            mobilization.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; <span id="currentYear"></span> Hajji Karim Kaliisa. All rights reserved. | Executive Portfolio</p>
+        <!-- Experience & Governance Section -->
+        <section class="section-block" id="experience">
+            <div class="section-inner">
+                <div class="section-header">
+                    <div class="section-tag">Governance &amp; Advisory</div>
+                    <h2 class="section-title">Leadership &amp; Board Memberships</h2>
+                    <p class="section-lead">Proven stewardship guiding national media houses, educational institutions,
+                        and government consultative bodies.</p>
+                </div>
+
+                <div class="exp-grid">
+                    <!-- Exp Item 1 -->
+                    <div class="nm-card exp-card">
+                        <div class="nm-socket exp-socket">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21h18M3 7h18M6 7v14M10 7v14M14 7v14M18 7v14M12 2l10 5H2l10-5z"></path>
+                            </svg>
+                        </div>
+                        <div class="exp-content-body">
+                            <h3 class="exp-role-title">Lead Technical Consultant</h3>
+                            <div class="exp-organization">Judicial Service Commission â€” JLOS, Government of Uganda</div>
+                            <p class="exp-description">
+                                Commissioned to direct a nationwide technical and economic feasibility study for
+                                establishing regional Ministry of Justice &amp; Constitutional Affairs (MOS) radio
+                                stations across Uganda.
+                            </p>
+                            <span class="exp-badge-date">December 2018</span>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 2 -->
+                    <div class="nm-card exp-card">
+                        <div class="nm-socket exp-socket">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="2"></circle>
+                                <path
+                                    d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="exp-content-body">
+                            <h3 class="exp-role-title">Board Member</h3>
+                            <div class="exp-organization">Next Media Services Umbrella</div>
+                            <p class="exp-description">
+                                Providing strategic governance over seven leading conglomerate media entities: NBS TV,
+                                Sanyuka TV, Salam TV, Next Radio, Nile Post, Next Communications, and Dream Catcher.
+                            </p>
+                            <span class="exp-badge-date">Corporate Governance</span>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 3 -->
+                    <div class="nm-card exp-card">
+                        <div class="nm-socket exp-socket">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" y1="19" x2="12" y2="23"></line>
+                                <line x1="8" y1="23" x2="16" y2="23"></line>
+                            </svg>
+                        </div>
+                        <div class="exp-content-body">
+                            <h3 class="exp-role-title">Resident Director &amp; Board Member</h3>
+                            <div class="exp-organization">Pearl FM</div>
+                            <p class="exp-description">
+                                Directed the entire conceptualization, engineering procurement, installation, and
+                                general administration of Pearl FM in 2010, building it into one of the most respected
+                                and listened-to broadcasting networks in East Africa.
+                            </p>
+                            <span class="exp-badge-date">2010 â€“ Present</span>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 4 -->
+                    <div class="nm-card exp-card">
+                        <div class="nm-socket exp-socket">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="exp-content-body">
+                            <h3 class="exp-role-title">Executive Director &amp; Board Member</h3>
+                            <div class="exp-organization">Voice of Africa (VOA) Radio â€” Kampala</div>
+                            <p class="exp-description">
+                                Directing national broadcast operations, managing a regional network of five repeater
+                                stations across Uganda under the Union Secretariat headquartered in Kololo.
+                            </p>
+                            <span class="exp-badge-date">Executive Directorship</span>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 5 -->
+                    <div class="nm-card exp-card">
+                        <div class="nm-socket exp-socket">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="exp-content-body">
+                            <h3 class="exp-role-title">Board Member</h3>
+                            <div class="exp-organization">Kampala High School</div>
+                            <p class="exp-description">
+                                Spearheading educational governance, student welfare initiatives, curriculum
+                                enhancement, and institutional modernization for secondary education.
+                            </p>
+                            <span class="exp-badge-date">Institutional Governance</span>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 6 -->
+                    <div class="nm-card exp-card">
+                        <div class="nm-socket exp-socket">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                            </svg>
+                        </div>
+                        <div class="exp-content-body">
+                            <h3 class="exp-role-title">Member</h3>
+                            <div class="exp-organization">National Broadcasters Association (NBA)</div>
+                            <p class="exp-description">
+                                Contributing strategic expertise toward broadcasting regulatory standards, spectrum
+                                policies, and technological progression across the Ugandan media landscape.
+                            </p>
+                            <span class="exp-badge-date">Industry Advisory</span>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 7 -->
+                    <div class="nm-card exp-card">
+                        <div class="nm-socket exp-socket">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="exp-content-body">
+                            <h3 class="exp-role-title">Council &amp; Board Member</h3>
+                            <div class="exp-organization">Makerere University</div>
+                            <p class="exp-description">
+                                Served on various executive and advisory boards including the University Council,
+                                shaping higher education management, academic integrity, and student development policy.
+                            </p>
+                            <span class="exp-badge-date">Higher Education Governance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="section-block" id="achievements">
+            <div class="section-inner">
+                <div class="section-header">
+                    <div class="section-tag">Key Milestones</div>
+                    <h2 class="section-title">Milestones &amp; Impact</h2>
+                    <p class="section-lead">Decades of landmark achievements across international broadcasting,
+                        infrastructure, and community transformation.</p>
+                </div>
+
+                <div class="milestones-grid">
+                    <!-- Milestone 01 -->
+                    <div class="nm-card milestone-card">
+                        <div class="milestone-top-row">
+                            <div class="nm-socket milestone-num-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </div>
+                            <span class="milestone-tag">Infrastructure</span>
+                        </div>
+                        <h3 class="milestone-title">Introduced Italian RVR Broadcast Tech</h3>
+                        <p class="milestone-desc">Brought Italy's world-leading FDI FM/TV Broadcasting Equipment (RVR)
+                            to the East African region, revolutionizing transmission clarity and network reliability.
+                        </p>
+                    </div>
+
+                    <!-- Milestone 02 -->
+                    <div class="nm-card milestone-card">
+                        <div class="milestone-top-row">
+                            <div class="nm-socket milestone-num-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <span class="milestone-tag">Community</span>
+                        </div>
+                        <h3 class="milestone-title">Self-Sustaining Community Empowerment</h3>
+                        <p class="milestone-desc">Mobilized local populations toward self-confidence and sustainable
+                            self-reliance, building community schools, medical clinics, and civic centers without
+                            foreign aid dependency.</p>
+                    </div>
+
+                    <!-- Milestone 03 -->
+                    <div class="nm-card milestone-card">
+                        <div class="milestone-top-row">
+                            <div class="nm-socket milestone-num-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            </div>
+                            <span class="milestone-tag">Regional</span>
+                        </div>
+                        <h3 class="milestone-title">Cross-Border Media Information Flow</h3>
+                        <p class="milestone-desc">Spearheaded an integrated regional media module enabling seamless
+                            content and informational flow across East, Central, and Southern African nations under the
+                            Union framework.</p>
+                    </div>
+
+                    <!-- Milestone 04 -->
+                    <div class="nm-card milestone-card">
+                        <div class="milestone-top-row">
+                            <div class="nm-socket milestone-num-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                            </div>
+                            <span class="milestone-tag">Partnership</span>
+                        </div>
+                        <h3 class="milestone-title">Turkish-Ugandan Media Technology Bridge</h3>
+                        <p class="milestone-desc">Forged key bilateral partnerships bringing modern Turkish broadcast
+                            equipment and software to Next Radio, Victoria FM, Pearl FM, VOA FM, Radio Masaaba, NBS TV,
+                            and Salam TV.</p>
+                    </div>
+
+                    <!-- Milestone 05 -->
+                    <div class="nm-card milestone-card">
+                        <div class="milestone-top-row">
+                            <div class="nm-socket milestone-num-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                            </div>
+                            <span class="milestone-tag">Capacity</span>
+                        </div>
+                        <h3 class="milestone-title">International Journalist Training</h3>
+                        <p class="milestone-desc">In partnership with the SENA Foundation and TiKA (Turkey), facilitated
+                            specialized modern broadcasting and investigative journalism training programs for hundreds
+                            of Ugandan reporters.</p>
+                    </div>
+
+                    <!-- Milestone 06 -->
+                    <div class="nm-card milestone-card">
+                        <div class="milestone-top-row">
+                            <div class="nm-socket milestone-num-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+                            </div>
+                            <span class="milestone-tag">Continental</span>
+                        </div>
+                        <h3 class="milestone-title">Union of African Radio Stations</h3>
+                        <p class="milestone-desc">Connected Ugandan FM broadcasting houses into the Pan-African Union of
+                            African Radio Stations in Khartoum, Sudan, fostering continental collaboration.</p>
+                    </div>
+
+                    <!-- Milestone 07 -->
+                    <div class="nm-card milestone-card">
+                        <div class="milestone-top-row">
+                            <div class="nm-socket milestone-num-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                            </div>
+                            <span class="milestone-tag">Expansion</span>
+                        </div>
+                        <h3 class="milestone-title">Four-Nation VOA Network Expansion</h3>
+                        <p class="milestone-desc">Spearheaded the physical establishment and licensing of Voice of
+                            Africa stations in Kampala (Uganda), Kigali (Rwanda), Bujumbura (Burundi), and Kinshasa (DR
+                            Congo).</p>
+                    </div>
+
+                    <!-- Milestone 08 -->
+                    <div class="nm-card milestone-card">
+                        <div class="milestone-top-row">
+                            <div class="nm-socket milestone-num-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <span class="milestone-tag">Global</span>
+                        </div>
+                        <h3 class="milestone-title">United States Government Nomination</h3>
+                        <p class="milestone-desc">In March 2017, selected by the US Government as one of three
+                            exceptional leaders with an exemplary record in African media to join the prestigious
+                            international media exchange program.</p>
+                    </div>
+
+                    <!-- Milestone 09 -->
+                    <div class="nm-card milestone-card">
+                        <div class="milestone-top-row">
+                            <div class="nm-socket milestone-num-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+                            </div>
+                            <span class="milestone-tag">Television</span>
+                        </div>
+                        <h3 class="milestone-title">Co-Founded Salam TV &amp; Sanyuka TV</h3>
+                        <p class="milestone-desc">Instrumental in founding Salam Television and Sanyuka TV under the NBS
+                            TV umbrella, creating two of the nation's most widely watched cultural and entertainment
+                            channels.</p>
+                    </div>
+
+                    <!-- Milestone 10 -->
+                    <div class="nm-card milestone-card">
+                        <div class="milestone-top-row">
+                            <div class="nm-socket milestone-num-socket">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <span class="milestone-tag">Advisory</span>
+                        </div>
+                        <h3 class="milestone-title">Global Technology Delegations</h3>
+                        <p class="milestone-desc">Led technical observation and equipment procurement missions to Ankara
+                            and Konya, Turkey, assessing next-generation digital broadcasting and transmission
+                            solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Consultation Section -->
+        <section class="section-block" id="contact">
+            <div class="section-inner">
+                <div class="section-header">
+                    <div class="section-tag">Direct Access</div>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-lead">Available for executive board appointments, strategic media consultancy, and
+                        high-impact advisory across Africa.</p>
+                </div>
+
+                <div class="contact-layout">
+                    <!-- Left: Contact Methods (High-Visibility Professional Sockets) -->
+                    <div class="contact-channels">
+                        <!-- WhatsApp Primary Card -->
+                        <a href="https://wa.me/256701555000" class="nm-card contact-channel-card" target="_blank"
+                            rel="noopener noreferrer" aria-label="Chat with Hajji Karim Kaliisa on WhatsApp">
+                            <div class="channel-left-cluster">
+                                <div class="contact-pro-socket socket-whatsapp">
+                                    <!-- Clean Vector WhatsApp Icon Matching Website Palette -->
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.301-.15-1.781-.879-2.057-.98-.276-.101-.477-.15-.678.15-.201.3-.778.98-.954 1.18-.176.201-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.501-1.786-1.677-2.087-.176-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.176.201-.301.301-.502.101-.201.05-.377-.025-.527-.075-.15-.678-1.633-.929-2.235-.245-.586-.494-.506-.678-.515-.176-.008-.377-.01-.578-.01s-.527.075-.804.377c-.276.301-1.055 1.03-1.055 2.512 0 1.482 1.08 2.914 1.231 3.115.15.201 2.125 3.245 5.148 4.552.719.311 1.28.497 1.718.636.722.23 1.379.197 1.9.12.58-.087 1.781-.728 2.032-1.431.251-.703.251-1.305.176-1.431-.075-.126-.276-.201-.577-.351z"/>
+                                        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.393A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.616 0-3.12-.444-4.417-1.218l-.317-.189-3.279.917.925-3.197-.207-.33A8.14 8.14 0 0 1 3.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
+                                    </svg>
+                                </div>
+                                <div class="channel-meta">
+                                    <div class="channel-label">
+                                        <span class="channel-status-dot"></span>
+                                        WhatsApp
+                                    </div>
+                                    <div class="channel-value">+256 701 555 000</div>
+                                </div>
+                            </div>
+                            <div class="channel-action-badge">
+                                <span>Chat Now</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp Alternative Card -->
+                        <a href="https://wa.me/256772423827" class="nm-card contact-channel-card" target="_blank"
+                            rel="noopener noreferrer" aria-label="Chat with Hajji Karim Kaliisa on WhatsApp (Alternative)">
+                            <div class="channel-left-cluster">
+                                <div class="contact-pro-socket socket-whatsapp">
+                                    <!-- Clean Vector WhatsApp Icon Matching Website Palette -->
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.301-.15-1.781-.879-2.057-.98-.276-.101-.477-.15-.678.15-.201.3-.778.98-.954 1.18-.176.201-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.501-1.786-1.677-2.087-.176-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.176.201-.301.301-.502.101-.201.05-.377-.025-.527-.075-.15-.678-1.633-.929-2.235-.245-.586-.494-.506-.678-.515-.176-.008-.377-.01-.578-.01s-.527.075-.804.377c-.276.301-1.055 1.03-1.055 2.512 0 1.482 1.08 2.914 1.231 3.115.15.201 2.125 3.245 5.148 4.552.719.311 1.28.497 1.718.636.722.23 1.379.197 1.9.12.58-.087 1.781-.728 2.032-1.431.251-.703.251-1.305.176-1.431-.075-.126-.276-.201-.577-.351z"/>
+                                        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.393A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.616 0-3.12-.444-4.417-1.218l-.317-.189-3.279.917.925-3.197-.207-.33A8.14 8.14 0 0 1 3.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
+                                    </svg>
+                                </div>
+                                <div class="channel-meta">
+                                    <div class="channel-label">
+                                        <span class="channel-status-dot"></span>
+                                        WhatsApp (Alternative)
+                                    </div>
+                                    <div class="channel-value">+256 772 423 827</div>
+                                </div>
+                            </div>
+                            <div class="channel-action-badge">
+                                <span>Chat Now</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+
+                        <!-- Direct Call Card -->
+                        <a href="tel:+256701555000" class="nm-card contact-channel-card" aria-label="Call Hajji Karim Kaliisa directly">
+                            <div class="channel-left-cluster">
+                                <div class="contact-pro-socket socket-phone">
+                                    <!-- Clean Vector Phone Icon Matching Website Palette -->
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="channel-meta">
+                                    <div class="channel-label">Direct Call — Milestone Impact</div>
+                                    <div class="channel-value">+256 701 555 000</div>
+                                </div>
+                            </div>
+                            <div class="channel-action-badge">
+                                <span>Call Now</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+
+                        <!-- Email Correspondence Card -->
+                        <a href="mailto:KarimKaliisa1970@gmail.com" class="nm-card contact-channel-card" aria-label="Send email to Hajji Karim Kaliisa">
+                            <div class="channel-left-cluster">
+                                <div class="contact-pro-socket socket-mail">
+                                    <!-- Clean Vector Mail Icon Matching Website Palette -->
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="4" width="20" height="16" rx="3"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg>
+                                </div>
+                                <div class="channel-meta">
+                                    <div class="channel-label">Official Email Correspondence</div>
+                                    <div class="channel-value">KarimKaliisa1970@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="channel-action-badge">
+                                <span>Send Email</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Right: Advisory Details -->
+                    <div class="nm-card advisory-note-card">
+                        <div class="nm-pill advisory-badge">Available for Consultations</div>
+                        <h3 class="advisory-title">Strategic Executive Engagement</h3>
+                        <p class="advisory-body">
+                            Hajji Karim Kaliisa welcomes high-level inquiries regarding executive board advisory, media
+                            infrastructure development, institutional governance, community development partnerships,
+                            and Pan-African broadcast network management.
+                        </p>
+                        <p class="advisory-signoff">
+                            Reach out directly via phone, WhatsApp, or email. We look forward to exploring impactful
+                            partnerships.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer (Clean & Centered) -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-copy">
+                &copy; <span id="currentYear"></span> <strong>Hajji Karim Kaliisa</strong>. All rights reserved.
+            </div>
+        </div>
     </footer>
 
-    <!-- Back to Top -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <!-- Back to Top Tactile Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Scroll to top" title="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
 
-    <script>
-        (function() {
-            // ============ DOM ELEMENTS ============
-            const navbar = document.getElementById('navbar');
-            const mobileToggle = document.getElementById('mobileToggle');
-            const navLinks = document.getElementById('navLinks');
-            const mobileOverlay = document.getElementById('mobileOverlay');
-            const backToTop = document.getElementById('backToTop');
-            const heroParticles = document.getElementById('heroParticles');
-            const currentYearSpan = document.getElementById('currentYear');
-
-            // ============ SET CURRENT YEAR ============
-            if (currentYearSpan) {
-                currentYearSpan.textContent = new Date().getFullYear();
-            }
-
-            // ============ HERO PARTICLES ============
-            if (heroParticles) {
-                for (let i = 0; i < 35; i++) {
-                    const particle = document.createElement('div');
-                    particle.classList.add('hero-particle');
-                    particle.style.left = Math.random() * 100 + '%';
-                    particle.style.animationDelay = Math.random() * 8 + 's';
-                    particle.style.animationDuration = (6 + Math.random() * 10) + 's';
-                    particle.style.width = (1 + Math.random() * 2.5) + 'px';
-                    particle.style.height = particle.style.width;
-                    heroParticles.appendChild(particle);
-                }
-            }
-
-            // ============ SCROLL HANDLER ============
-            function handleScroll() {
-                const scrollY = window.scrollY;
-
-                // Navbar shadow
-                if (scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-
-                // Back to top visibility
-                if (scrollY > 600) {
-                    backToTop.classList.add('visible');
-                } else {
-                    backToTop.classList.remove('visible');
-                }
-            }
-            window.addEventListener('scroll', handleScroll, { passive: true });
-
-            // ============ MOBILE MENU ============
-            function openMenu() {
-                navLinks.classList.add('open');
-                mobileOverlay.classList.add('active');
-                mobileToggle.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-
-            function closeMenu() {
-                navLinks.classList.remove('open');
-                mobileOverlay.classList.remove('active');
-                mobileToggle.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-
-            mobileToggle.addEventListener('click', () => {
-                if (navLinks.classList.contains('open')) {
-                    closeMenu();
-                } else {
-                    openMenu();
-                }
-            });
-
-            mobileOverlay.addEventListener('click', closeMenu);
-
-            // Close menu when a nav link is clicked
-            const allNavLinks = navLinks.querySelectorAll('a');
-            allNavLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navLinks.classList.contains('open')) {
-                        closeMenu();
-                    }
-                });
-            });
-
-            // ============ BACK TO TOP ============
-            backToTop.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-
-            // ============ ESC KEY TO CLOSE MENU ============
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && navLinks.classList.contains('open')) {
-                    closeMenu();
-                    mobileToggle.focus();
-                }
-            });
-
-            // ============ INITIAL SCROLL CHECK ============
-            handleScroll();
-
-            // ============ SMOOTH SCROLL FOR ALL ANCHOR LINKS ============
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        e.preventDefault();
-                        const navHeight = navbar.offsetHeight;
-                        const targetPosition = target.getBoundingClientRect().top + window
-                            .scrollY - navHeight - 10;
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-
-            // ============ INTERSECTION OBSERVER FOR FADE-IN ANIMATIONS ============
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -40px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-
-            // Observe achievement cards and experience items for subtle entrance
-            document.querySelectorAll('.achievement-card, .exp-item, .edu-card').forEach(el => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(20px)';
-                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-                observer.observe(el);
-            });
-
-            // Stagger the observation slightly
-            setTimeout(() => {
-                document.querySelectorAll('.achievement-card, .exp-item, .edu-card').forEach(
-                (el, i) => {
-                    el.style.transitionDelay = (i * 0.04) + 's';
-                });
-            }, 100);
-
-            console.log('%c Hajji Karim Kaliisa — Executive Portfolio %c Ready ',
-                'background:#c8a45c;color:#0a0a0b;padding:6px 12px;border-radius:4px;font-weight:700;',
-                'color:#c8a45c;');
-            console.log('%c 22+ Years of Excellence in Media & Executive Leadership ',
-                'color:#b0aea6;font-style:italic;');
-        })();
-    </script>
+    <!-- Interactive Scripts -->
+    <script src="script.js" defer></script>
 </body>
+
 </html>
